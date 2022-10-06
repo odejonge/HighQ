@@ -1,5 +1,5 @@
 #actionJS
-*.tmp
+**.tmp**
 
 
 # dependencies
