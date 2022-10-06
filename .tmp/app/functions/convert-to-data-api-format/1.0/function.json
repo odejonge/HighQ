@@ -1,0 +1,37 @@
+{
+  "description": "Description",
+  "label": "Convert To Data Api Format",
+  "category": "Misc",
+  "icon": "CreateIcon",
+  "options": [
+    {
+      "name": "input",
+      "label": "API Response",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["STRING"]
+      },
+      "info": "Select the output from the HTTP(S) action step here"
+    },
+    {
+      "name": "path",
+      "label": "Path",
+      "info": "The patb within the response to use as records",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "name": "output",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "label": "AS",
+      "info": "The name of the output of this action step"
+    }
+  ],
+  "yields": "NONE"
+}

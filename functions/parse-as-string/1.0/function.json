@@ -1,0 +1,26 @@
+{
+  "description": "Parses any given input to a Text",
+  "label": "Parse as Text",
+  "category": "Misc",
+  "icon": "CreateIcon",
+  "options": [
+    {
+      "label": "Input",
+      "info": "The value you want to convert to a Text",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["NUMBER", "BOOLEAN"]
+      },
+      "name": "input"
+    },
+    {
+      "label": "AS",
+      "meta": {
+        "type": "Boolean"
+      },
+      "name": "output",
+      "info": "The name of the variable you want for the fetched value."
+    }
+  ],
+  "yields": "NONE"
+}

@@ -1,0 +1,39 @@
+{
+  "description": "Description",
+  "label": "Test Expressions",
+  "category": "Misc",
+  "icon": "CreateIcon",
+  "options": [
+    {
+      "meta": {
+        "type": "MultilineText"
+      },
+      "name": "expression",
+      "label": "Expression",
+      "advanced": false,
+      "configuration": {
+        "placeholder": "My expression"
+      }
+    },
+    {
+      "info": "Select all the variables you want to have available in the template with a key",
+      "label": "Variables",
+      "meta": {
+        "type": "Map"
+      },
+      "name": "variables"
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "output",
+      "label": "As Text",
+      "info": "Result"
+    }
+  ],
+  "yields": "NONE"
+}
