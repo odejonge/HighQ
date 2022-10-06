@@ -1,6 +1,7 @@
 const gql = async (query) => {
   return [{ id: 1, name: 'Bruce Wayne' }];
 };
+
 const sitesJson = {
   site: [
     {
@@ -177,7 +178,7 @@ const sitesJson = {
     },
   ],
 };
-​
+
 const usersJson = [
   {
     id: 1,
