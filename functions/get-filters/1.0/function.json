@@ -1,0 +1,25 @@
+{
+  "description": "Description",
+  "label": "Get Filters",
+  "category": "Misc",
+  "icon": "CreateIcon",
+  "options": [
+    {
+      "name": "params",
+      "label": "Params Object",
+      "info": "Select the Params object here",
+      "meta": {
+        "type": "JSON"
+      }
+    },
+    {
+      "name": "output",
+      "label": "AS",
+      "info": "Returns a Key-Value pair of the filters",
+      "meta": {
+        "type": "JSON"
+      }
+    }
+  ],
+  "yields": "NONE"
+}
