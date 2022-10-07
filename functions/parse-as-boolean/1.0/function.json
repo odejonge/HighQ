@@ -1,8 +1,8 @@
 {
   "description": "Parses any given input to a Boolean",
   "label": "Parse as Boolean",
-  "category": "Misc",
-  "icon": "CreateIcon",
+  "category": "Parse",
+  "icon": "LightningIcon",
   "options": [
     {
       "label": "Input",

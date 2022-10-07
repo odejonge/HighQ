@@ -1,8 +1,8 @@
 {
   "description": "Converts any given input to a Number",
   "label": "Parse as Number",
-  "category": "Misc",
-  "icon": "CreateIcon",
+  "category": "Parse",
+  "icon": "LightningIcon",
   "options": [
     {
       "label": "Input",

@@ -1,7 +1,7 @@
 {
-  "description": "Description",
+  "description": "Lets you test expressions from the Expression step",
   "label": "Test Expressions",
-  "category": "Misc",
+  "category": "Expression",
   "icon": "CreateIcon",
   "options": [
     {

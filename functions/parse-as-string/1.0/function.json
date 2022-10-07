@@ -1,8 +1,8 @@
 {
   "description": "Parses any given input to a Text",
   "label": "Parse as Text",
-  "category": "Misc",
-  "icon": "CreateIcon",
+  "category": "Parse",
+  "icon": "LightningIcon",
   "options": [
     {
       "label": "Input",

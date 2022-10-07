@@ -1,8 +1,8 @@
 {
-  "description": "Description",
+  "description": "This function tries to set an API output to the format of the Betty Blocks Data-API",
   "label": "Convert To Data Api Format",
-  "category": "Misc",
-  "icon": "CreateIcon",
+  "category": "External",
+  "icon": "LightningIcon",
   "options": [
     {
       "name": "input",
