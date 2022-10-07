@@ -1,4 +1,4 @@
-import templayed from "./templayed";
+import templayed from './templayed';
 
 const parseHeaders = (headers) =>
   headers.reduce((acc, { key, value }) => ({ ...acc, [key]: value }), {});
@@ -9,7 +9,7 @@ const parseQueryParameters = (queryParameters) =>
       const paramKey = index === 0 ? `?${key}` : key;
       return `${paramKey}=${encodeURIComponent(value)}`;
     })
-    .join("&");
+    .join('&');
 
 const generateUrl = (url, protocol, queryParameters) =>
   `${protocol}://${url}${parseQueryParameters(queryParameters)}`;
@@ -29,7 +29,7 @@ const https2 = async ({
     return previousValue;
   }, {});
   const parsedBody = templayed(body)(variableMap);
-  console.log(parsedBody);
+
   const fetchUrl = generateUrl(url, protocol, queryParameters);
   const options = {
     method,
