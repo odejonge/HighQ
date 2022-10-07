@@ -11,12 +11,5 @@ test('fetchJsonVariable 1.0', async () => {
     jsonInput: { myKey: 'myValue' },
     keyName: 'wrongKey',
   });
-  assert(outputTwo, {
-    errors: [
-      {
-        extensions: { statusCode: 'ACTION_STEP_ERROR' },
-        message: 'Cannot find wrongKey in {"myKey":"myValue"}',
-      },
-    ],
-  });
+  assert(outputTwo, { output: '' });
 });
