@@ -1,9 +1,22 @@
 test('fetchJsonVariable 1.0', async () => {
-  const output = await $app['fetchJsonVariable 1.0']({
+  const outputOne = await $app['fetchJsonVariable 1.0']({
     jsonInput: { myKey: 'myValue' },
-    variableName: 'myKey',
+    keyName: 'myKey',
   });
-  assert(output, {
+  assert(outputOne, {
     output: 'myValue',
+  });
+
+  const outputTwo = await $app['fetchJsonVariable 1.0']({
+    jsonInput: { myKey: 'myValue' },
+    keyName: 'wrongKey',
+  });
+  assert(outputTwo, {
+    errors: [
+      {
+        extensions: { statusCode: 'ACTION_STEP_ERROR' },
+        message: 'Cannot find wrongKey in {"myKey":"myValue"}',
+      },
+    ],
   });
 });

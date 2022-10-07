@@ -17,8 +17,8 @@
       "info": "The JSON/Text you want to fetch the variable from."
     },
     {
-      "name": "variableName",
-      "label": "Variable Name",
+      "name": "keyName",
+      "label": "Key Name",
       "meta": {
         "type": "Text",
         "validations": {
