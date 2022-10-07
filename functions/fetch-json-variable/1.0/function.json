@@ -1,15 +1,15 @@
 {
   "description": "Fetches the value of the given key from a JSON objective.",
-  "label": "Fetch Json Var",
-  "category": "Misc",
-  "icon": "CreateIcon",
+  "label": "Fetch JSON Variable",
+  "category": "JSON",
+  "icon": "LightningIcon",
   "options": [
     {
       "name": "jsonInput",
       "label": "JSON Input",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["STRING"],
+        "allowedKinds": ["STRING", "JSON"],
         "validations": {
           "required": true
         }
