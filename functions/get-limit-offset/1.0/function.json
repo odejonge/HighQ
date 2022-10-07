@@ -1,6 +1,6 @@
 {
   "description": "Gets the limit and offset in the request, from params, and outputs them as Numbers",
-  "label": "Get Limit Offset Skip",
+  "label": "Get Limit and Offset",
   "category": "Parameters",
   "icon": "CreateIcon",
   "options": [

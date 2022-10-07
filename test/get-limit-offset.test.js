@@ -51,9 +51,7 @@ test('getLimitOffset 1.0', async () => {
     },
   });
   assert(output, {
-    output: {
-      limit: 5,
-      offset: 0,
-    },
+    limit: 5,
+    offset: 0,
   });
 });

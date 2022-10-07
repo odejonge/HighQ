@@ -1,9 +1,7 @@
 const getLimitOffset = async ({ params: { skip, take } }) => {
   return {
-    output: {
-      offset: skip,
-      limit: take,
-    },
+    offset: skip,
+    limit: take,
   };
 };
 
