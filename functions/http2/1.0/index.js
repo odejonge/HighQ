@@ -39,7 +39,7 @@ const https2 = async ({
 
   const response = await fetch(fetchUrl, options);
   const data = await response.text();
-  const responseCode = response.status;
+  const responseCode = await response.status;
 
   return { as: data, responseCode };
 };
