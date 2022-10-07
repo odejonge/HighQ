@@ -1,7 +1,7 @@
 {
-  "description": "Description",
+  "description": "Gets the filters in the request, from params, and outputs them as a key value object",
   "label": "Get Filters",
-  "category": "Misc",
+  "category": "Parameters",
   "icon": "CreateIcon",
   "options": [
     {
@@ -9,7 +9,7 @@
       "label": "Params Object",
       "info": "Select the Params object here",
       "meta": {
-        "type": "JSON"
+        "type": "Object"
       }
     },
     {
@@ -17,7 +17,10 @@
       "label": "AS",
       "info": "Returns a Key-Value pair of the filters",
       "meta": {
-        "type": "JSON"
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
       }
     }
   ],
