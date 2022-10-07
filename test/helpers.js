@@ -2,6 +2,114 @@ const gql = async (query) => {
   return [{ id: 1, name: 'Bruce Wayne' }];
 };
 
+const peoplesJson = {
+  person: [
+    {
+      userid: 1470,
+      email: 'marcel.korporaal@bettyblocks.com',
+      title: 'Betty Blocks Solution Engineer',
+      firstname: 'Marcel',
+      lastname: 'Korporaal',
+      goesby: null,
+      id: 1,
+      httpavatar:
+        'https://portal.gunder.com/gunder/images/griffin/socialdealroom/avatar_v4/48avatar.png',
+      avatar:
+        'https://portal.gunder.com/gunder/api/2/users/1470/avatar?size=48&lastmodifieddate=1664905492313',
+      userlink: 'https://portal.gunder.com/gunder/api/2/users/1470',
+      httplink:
+        'https://portal.gunder.com/gunder/viewUserProfile.action?metaData.encryptTargetUserID=M8dzjm2kajk=&metaData.updateUserProfileProcess=true',
+      orgname: 'Betty Blocks',
+      orgid: 26,
+      orgaddress: ',,,,(Unknown),,',
+    },
+    {
+      id: 2,
+      userid: 993,
+      email: 'asaiger@gunder.com',
+      title: 'Practice Innovation Attorney',
+      firstname: 'Abraham',
+      lastname: 'Saiger',
+      goesby: null,
+      httpavatar:
+        'https://portal.gunder.com/gunder/images/griffin/socialdealroom/avatar_v4/48avatar.png',
+      avatar:
+        'https://portal.gunder.com/gunder/api/2/users/993/avatar?size=48&lastmodifieddate=1665066711467',
+      userlink: 'https://portal.gunder.com/gunder/api/2/users/993',
+      httplink:
+        'https://portal.gunder.com/gunder/viewUserProfile.action?metaData.encryptTargetUserID=dNlUApz2LaM=&metaData.updateUserProfileProcess=true',
+      orgname: 'Gunderson Dettmer',
+      orgid: 3,
+      orgaddress: ',,,,USA,,',
+      phone: '$$650-463-5487',
+      department: 'Associate',
+    },
+    {
+      id: 3,
+      userid: 488,
+      email: 'jgoodwin@gunder.com',
+      title: 'Venture Fund/Tax Partner',
+      firstname: 'Jonathan',
+      lastname: 'Goodwin',
+      goesby: null,
+      httpavatar:
+        'https://portal.gunder.com/gunder/images/griffin/socialdealroom/avatar_v4/48avatar.png',
+      avatar:
+        'https://portal.gunder.com/gunder/api/2/users/488/avatar?size=48&lastmodifieddate=1664978920860',
+      userlink: 'https://portal.gunder.com/gunder/api/2/users/488',
+      httplink:
+        'https://portal.gunder.com/gunder/viewUserProfile.action?metaData.encryptTargetUserID=AA4EvNK2i0k=&metaData.updateUserProfileProcess=true',
+      orgname: 'Gunderson Dettmer',
+      orgid: 3,
+      orgaddress: ',,,,USA,,',
+      phone: '$$650-463-5366',
+      department: 'Partner',
+    },
+    {
+      id: 4,
+      userid: 1003,
+      email: 'lstiver@gunder.com',
+      title: 'Innovation Specialist',
+      firstname: 'Lesley',
+      lastname: 'Stiver',
+      goesby: null,
+      httpavatar:
+        'https://portal.gunder.com/gunder/downloadUserAvatar.action?user.userId=1003&user.avatarWidth=48&user.lastModifiedTime=1665067813853&encryptedUserId=dXNlcl8xNDcw',
+      avatar:
+        'https://portal.gunder.com/gunder/api/2/users/1003/avatar?size=48&lastmodifieddate=1665067813853',
+      userlink: 'https://portal.gunder.com/gunder/api/2/users/1003',
+      httplink:
+        'https://portal.gunder.com/gunder/viewUserProfile.action?metaData.encryptTargetUserID=4plihahs120=&metaData.updateUserProfileProcess=true',
+      orgname: 'Gunderson Dettmer',
+      orgid: 3,
+      orgaddress: ',,,,USA,,',
+      phone: '$$650-324-5172',
+      department: 'IT',
+    },
+    {
+      id: 5,
+      userid: 838,
+      email: 'lkopmeyer@gunder.com',
+      title: 'Lead Client Innovation Specialist',
+      firstname: 'Luke',
+      lastname: 'Kopmeyer',
+      goesby: null,
+      httpavatar:
+        'https://portal.gunder.com/gunder/downloadUserAvatar.action?user.userId=838&user.avatarWidth=48&user.lastModifiedTime=1665066244360&encryptedUserId=dXNlcl8xNDcw',
+      avatar:
+        'https://portal.gunder.com/gunder/api/2/users/838/avatar?size=48&lastmodifieddate=1665066244360',
+      userlink: 'https://portal.gunder.com/gunder/api/2/users/838',
+      httplink:
+        'https://portal.gunder.com/gunder/viewUserProfile.action?metaData.encryptTargetUserID=c2KmBixYdL8=&metaData.updateUserProfileProcess=true',
+      orgname: 'Gunderson Dettmer',
+      orgid: 3,
+      orgaddress: ',,,,USA,,',
+      phone: '$$650-324-5177',
+      department: 'IT',
+    },
+  ],
+};
+
 const sitesJson = {
   site: [
     {
