@@ -48,11 +48,10 @@
       "label": "Override total Count",
       "advanced": true,
       "meta": {
-        "type": "Number",
-        "validations": {
-          "min": 0
-        }
-      }
+        "type": "Value",
+        "allowedKinds": ["NUMBER", "STRING"]
+      },
+      "info": "Optional. This overrides the total count sent to the pagebuilder."
     }
   ],
   "yields": "NONE"
