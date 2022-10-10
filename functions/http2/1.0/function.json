@@ -99,17 +99,6 @@
       "name": "as",
       "label": "As",
       "info": "The name of the variable you want for the result of your request."
-    },
-    {
-      "name": "responseCode",
-      "label": "Response Code As",
-      "meta": {
-        "type": "Output",
-        "output": {
-          "type": "Number"
-        }
-      },
-      "info": "The response code of the request"
     }
   ],
   "yields": "NONE"
