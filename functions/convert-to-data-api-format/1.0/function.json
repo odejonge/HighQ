@@ -42,6 +42,17 @@
       },
       "label": "AS",
       "info": "The name of the output of this action step"
+    },
+    {
+      "name": "totalCountOverride",
+      "label": "Override total Count",
+      "advanced": true,
+      "meta": {
+        "type": "Number",
+        "validations": {
+          "min": 0
+        }
+      }
     }
   ],
   "yields": "NONE"

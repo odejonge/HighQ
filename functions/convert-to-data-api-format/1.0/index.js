@@ -1,6 +1,11 @@
 import _ from 'lodash';
 
-const convertToDataApiFormat = async ({ input, path, fields }) => {
+const convertToDataApiFormat = async ({
+  input,
+  path,
+  fields,
+  totalCountOverride,
+}) => {
   input = JSON.parse(input);
   function flattenObject(obj, newObj, prefix) {
     newObj = newObj || {};
@@ -56,7 +61,7 @@ const convertToDataApiFormat = async ({ input, path, fields }) => {
 
   return {
     output: {
-      totalCount: result.length,
+      totalCount: totalCountOverride ? totalCountOverride : result.length,
       results: result,
     },
   };
