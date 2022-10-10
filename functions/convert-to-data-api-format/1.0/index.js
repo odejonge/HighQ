@@ -1,8 +1,7 @@
 import _ from 'lodash';
 
-const convertToDataApiFormat = async ({ input, path }) => {
+const convertToDataApiFormat = async ({ input, path, fields }) => {
   input = JSON.parse(input);
-
   function flattenObject(obj, newObj, prefix) {
     newObj = newObj || {};
     prefix = prefix || '';
@@ -33,23 +32,27 @@ const convertToDataApiFormat = async ({ input, path }) => {
     result.push(flattenObject(element));
   });
 
-  var i = 1;
-  result.forEach((element) => {
+  for (let index = 0; index < result.length; index++) {
+    const element = result[index];
+
     for (const key in element) {
-      if (Object.hasOwnProperty.call(element, key)) {
-        if (key.includes('.')) {
-          var newKey = _.last(key.split('.'));
-          element[newKey] = element[key];
-          delete element[key];
-        }
+      var newKey = key;
+      var value = element[key];
+      if (newKey.includes('.')) {
+        newKey = _.last(newKey.split('.'));
+        value = element[key];
+        delete element[key];
+      }
+      if (JSON.parse(fields).includes(newKey)) {
+        element[newKey] = value;
+      } else {
+        delete element[key];
       }
     }
-
     if (!('id' in element)) {
-      element['id'] = i;
+      element['id'] = index;
     }
-    i++;
-  });
+  }
 
   return {
     output: {

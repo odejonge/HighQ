@@ -22,6 +22,17 @@
       }
     },
     {
+      "name": "fields",
+      "label": "Fields",
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": true
+        }
+      },
+      "info": "The fields that should be returned to the front-end. Generate this variable with the Get Fields action."
+    },
+    {
       "name": "output",
       "meta": {
         "type": "Output",
