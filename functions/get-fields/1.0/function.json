@@ -1,0 +1,28 @@
+{
+  "description": "Gets the fields that are requested from the pagebuilder.",
+  "label": "Get Fields",
+  "category": "Parameters",
+  "icon": "LightningIcon",
+  "options": [
+    {
+      "name": "params",
+      "label": "Params Object",
+      "info": "Select the Params object here",
+      "meta": {
+        "type": "Object"
+      }
+    },
+    {
+      "name": "output",
+      "label": "AS",
+      "info": "Returns the fields that are requested by the front-end",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
