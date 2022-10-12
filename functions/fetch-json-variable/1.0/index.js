@@ -4,7 +4,7 @@ const fetchJsonVariable = async ({ jsonInput, keyName }) => {
   } finally {
     if (!(keyName in jsonInput)) {
       return {
-        output: '',
+        output: null,
       };
     } else {
       return {
