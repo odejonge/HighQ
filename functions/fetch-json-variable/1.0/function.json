@@ -39,5 +39,6 @@
       "info": "The name of the variable you want for the fetched veriable."
     }
   ],
-  "yields": "NONE"
+  "yields": "NONE",
+  "expression": true
 }
