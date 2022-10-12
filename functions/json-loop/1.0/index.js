@@ -2,11 +2,11 @@ const jsonLoop = async ({ input, path }, steps) => {
   try {
     input = JSON.parse(input);
   } finally {
-    if (Array.isArray(path)) {
+    if (path && path.includes('.')) {
       path.split('.').forEach((key) => {
         input = input[key];
       });
-    } else if (typeof path !== 'undefined') {
+    } else if (typeof path !== 'undefined' && path !== '' && path !== null) {
       input = input[path];
     }
 
