@@ -2,13 +2,23 @@ const fetchJsonVariable = async ({ jsonInput, keyName }) => {
   try {
     jsonInput = JSON.parse(jsonInput);
   } finally {
-    if (!(keyName in jsonInput)) {
+    if (keyName.includes('.')) {
+      keyName.split('.').forEach((value, key, array) => {
+        if (key + 1 === array.length) {
+          keyName = array[array.length - 1];
+          return;
+        }
+        jsonInput = jsonInput[value];
+      });
+    }
+
+    if (keyName in jsonInput) {
       return {
-        output: null,
+        output: jsonInput[keyName],
       };
     } else {
       return {
-        output: jsonInput[keyName],
+        output: null,
       };
     }
   }

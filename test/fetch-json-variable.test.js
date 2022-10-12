@@ -11,30 +11,15 @@ test('fetchJsonVariable 1.0', async () => {
     jsonInput: { myKey: 'myValue' },
     keyName: 'wrongKey',
   });
-  assert(outputTwo, { output: '' });
+  assert(outputTwo, { output: null });
 
   const outputThree = await $app['fetchJsonVariable 1.0']({
     jsonInput: {
-      access_token: 'x6uPha4TjHWnjNZedSzICJ2wC3BMBM1u',
-      refresh_token_expires_in: '31536000',
-      expires_in: '2678400',
-      refresh_token: 'BNDHbjewLIDZ3z3gbUUTrnOeg8EgLOxu',
-      token_type: 'bearer',
-      useremail: 'marcel.korporaal@bettyblocks.com',
+      user: {
+        useremail: 'maarten.geerse@bettyblocks.com',
+      },
     },
-    keyName: 'access_token',
+    keyName: 'user.useremail',
   });
-  assert(outputThree, { output: 'x6uPha4TjHWnjNZedSzICJ2wC3BMBM1u' });
-  const outputFour = await $app['fetchJsonVariable 1.0']({
-    jsonInput: {
-      access_token: 'x6uPha4TjHWnjNZedSzICJ2wC3BMBM1u',
-      refresh_token_expires_in: '31536000',
-      expires_in: '2678400',
-      refresh_token: 'BNDHbjewLIDZ3z3gbUUTrnOeg8EgLOxu',
-      token_type: 'bearer',
-      useremail: 'marcel.korporaal@bettyblocks.com',
-    },
-    keyName: 'refresh_token',
-  });
-  assert(outputFour, { output: 'BNDHbjewLIDZ3z3gbUUTrnOeg8EgLOxu' });
+  assert(outputThree, { output: 'maarten.geerse@bettyblocks.com' });
 });
