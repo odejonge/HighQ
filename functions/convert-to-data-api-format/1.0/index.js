@@ -24,11 +24,11 @@ const convertToDataApiFormat = async ({
     return newObj;
   }
 
-  if (Array.isArray(path)) {
+  if (path && path.includes('.')) {
     path.split('.').forEach((key) => {
       input = input[key];
     });
-  } else if (path) {
+  } else if (typeof path !== 'undefined' && path !== '' && path !== null) {
     input = input[path];
   }
 
@@ -61,7 +61,8 @@ const convertToDataApiFormat = async ({
 
   return {
     output: {
-      totalCount: totalCountOverride ? totalCountOverride : result.length,
+      totalCount:
+        totalCountOverride !== null ? totalCountOverride : result.length,
       results: result,
     },
   };
