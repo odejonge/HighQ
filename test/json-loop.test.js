@@ -1,7 +1,7 @@
 test('jsonLoop 1.0', async () => {
   const output = await $app['jsonLoop 1.0']({
     input: JSON.stringify(usersJson),
-    path: 'site',
+    path: null,
   });
   assert(output, {
     index: 0,
