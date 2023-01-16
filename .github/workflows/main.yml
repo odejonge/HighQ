@@ -1,0 +1,11 @@
+name: publish
+on: [push]
+jobs:
+  validate-actions:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Install BB CLI
+        run: |
+            npm i -g @betty-blocks/cli
+            bb functions validate
