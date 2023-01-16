@@ -1,4 +1,4 @@
-name: publish
+name: Validate actions
 on: [push]
 jobs:
   validate-actions:
