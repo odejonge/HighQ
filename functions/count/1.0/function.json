@@ -1,0 +1,32 @@
+{
+  "description": "Lets you count the amount of elements in an array.",
+  "label": "Count",
+  "category": "Misc",
+  "icon": {
+    "name": "NumberCountIcon",
+    "color": "Teal"
+  },
+  "options": [
+    {
+      "label": "Array",
+      "info": "Insert an array or collection.",
+      "name": "countable",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["JSON", "ARRAY", "STRING"]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      },
+      "info": "Returns the amount of items found."
+    }
+  ],
+  "yields": "NONE"
+}

@@ -2,7 +2,10 @@
   "description": "Sends a HTTP(S) request",
   "label": "HTTP(S) 2.0",
   "category": "External",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Purple",
+    "name": "GlobeIcon"
+  },
   "options": [
     {
       "info": "Enter what protocol the receiving end needs to use. You can choose between HTTP and HTTPS, which one you should use depends on your host.",
@@ -73,7 +76,7 @@
       "name": "queryParameters"
     },
     {
-      "info": "Select all the variables you want to have available in the template with a key",
+      "info": "Select all the variables you want to have available in the template with a key. Use them in the body with {{ key }}",
       "label": "Body Variables",
       "meta": {
         "type": "Map"

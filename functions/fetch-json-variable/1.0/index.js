@@ -12,15 +12,9 @@ const fetchJsonVariable = async ({ jsonInput, keyName }) => {
       });
     }
 
-    if (keyName in jsonInput) {
-      return {
-        output: jsonInput[keyName],
-      };
-    } else {
-      return {
-        output: null,
-      };
-    }
+    return {
+      output: keyName in jsonInput ? jsonInput[keyName] : null,
+    };
   }
 };
 

@@ -2,7 +2,10 @@
   "description": "Lets you test expressions from the Expression step",
   "label": "Test Expressions",
   "category": "Expression",
-  "icon": "CreateIcon",
+  "icon": {
+    "color": "Green",
+    "name": "ExpressionIcon"
+  },
   "options": [
     {
       "meta": {

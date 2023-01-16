@@ -2,7 +2,10 @@
   "description": "Parses any given input to a Text",
   "label": "Parse as Text",
   "category": "Parse",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Teal",
+    "name": "VariableIcon"
+  },
   "options": [
     {
       "label": "Input",

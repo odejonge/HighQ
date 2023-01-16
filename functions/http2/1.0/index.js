@@ -28,13 +28,12 @@ const https2 = async ({
     previousValue[currentValue.key] = currentValue.value;
     return previousValue;
   }, {});
-  const parsedBody = templayed(body)(variableMap);
 
   const fetchUrl = generateUrl(url, protocol, queryParameters);
   const options = {
     method,
     headers: parseHeaders(headers),
-    body: parsedBody,
+    body: body ? templayed(body)(variableMap) : undefined,
   };
 
   const response = await fetch(fetchUrl, options);

@@ -2,7 +2,10 @@
   "description": "Gets the fields that are requested from the pagebuilder.",
   "label": "Get Fields",
   "category": "Parameters",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Teal",
+    "name": "DataJumpUpIcon"
+  },
   "options": [
     {
       "name": "params",

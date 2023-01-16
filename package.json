@@ -2,7 +2,11 @@
   "name": "app-functions",
   "version": "1.0.0",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "@babel/preset-env": "^7.20.2",
+    "graphql": "^16.6.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40"
   },
   "private": "true"
 }

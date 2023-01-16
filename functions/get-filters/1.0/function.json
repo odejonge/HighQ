@@ -2,7 +2,10 @@
   "description": "Gets the filters in the request, from params, and outputs them as a key value object",
   "label": "Get Filters",
   "category": "Parameters",
-  "icon": "CreateIcon",
+  "icon": {
+    "color": "Teal",
+    "name": "DataJumpUpIcon"
+  },
   "options": [
     {
       "name": "params",

@@ -2,7 +2,10 @@
   "description": "Converts any given input to a Number",
   "label": "Parse as Number",
   "category": "Parse",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Teal",
+    "name": "VariableIcon"
+  },
   "options": [
     {
       "label": "Input",

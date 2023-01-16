@@ -2,7 +2,10 @@
   "description": "Fetches the value of the given key from a JSON objective.",
   "label": "Fetch JSON Variable",
   "category": "JSON",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Teal",
+    "name": "ExpressionIcon"
+  },
   "options": [
     {
       "name": "jsonInput",
@@ -39,6 +42,5 @@
       "info": "The name of the variable you want for the fetched veriable."
     }
   ],
-  "yields": "NONE",
-  "expression": true
+  "yields": "NONE"
 }

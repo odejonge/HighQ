@@ -1,8 +1,11 @@
 {
   "description": "Concatenates two strings with an optional separator to combine two values into one string (eg, fullname is firstname + space + lastname)",
   "label": "Concat String",
-  "category": "Misc",
-  "icon": "CreateIcon",
+  "category": "Parse",
+  "icon": {
+    "color": "Teal",
+    "name": "VariableIcon"
+  },
   "options": [
     {
       "meta": {

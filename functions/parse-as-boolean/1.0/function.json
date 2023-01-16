@@ -2,7 +2,10 @@
   "description": "Parses any given input to a Boolean",
   "label": "Parse as Boolean",
   "category": "Parse",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Teal",
+    "name": "VariableIcon"
+  },
   "options": [
     {
       "label": "Input",

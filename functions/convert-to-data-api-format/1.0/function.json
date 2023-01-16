@@ -2,7 +2,10 @@
   "description": "This function tries to set an API output to the format of the Betty Blocks Data-API",
   "label": "Convert To Data Api Format",
   "category": "External",
-  "icon": "LightningIcon",
+  "icon": {
+    "color": "Pink",
+    "name": "BettyLogoIcon"
+  },
   "options": [
     {
       "name": "input",
@@ -52,6 +55,26 @@
         "allowedKinds": ["NUMBER", "STRING"]
       },
       "info": "Optional. This overrides the total count sent to the pagebuilder."
+    },
+    {
+      "name": "offsetOverride",
+      "label": "Override offset",
+      "advanced": true,
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["NUMBER", "STRING"]
+      },
+      "info": "Optional. This overrides the offset sent to the pagebuilder."
+    },
+    {
+      "name": "limitOverride",
+      "label": "Override limit",
+      "advanced": true,
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["NUMBER", "STRING"]
+      },
+      "info": "Optional. This overrides limit sent to the pagebuilder."
     }
   ],
   "yields": "NONE"
