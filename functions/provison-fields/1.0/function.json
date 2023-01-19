@@ -1,0 +1,36 @@
+{
+  "description": "Description",
+  "label": "Provison Fields",
+  "category": "Data API",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "name": "fields",
+      "label": "fields",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "name": "input",
+      "label": "Object(s)",
+      "meta": {
+        "type": "Object"
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
