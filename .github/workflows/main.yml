@@ -12,8 +12,8 @@ jobs:
       -
         name: Install the included npm packages
         run: |
-            npm i
+            npm ci
       -
         name: Run validation
         run: |
-            bb functions validate        
+            bb functions validate
