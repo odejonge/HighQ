@@ -1,7 +1,7 @@
 {
   "description": "In order for the front-end to display records, they need to have an ID.",
   "label": "Add IDs",
-  "category": "Misc",
+  "category": "Data API",
   "icon": {
     "name": "IDIcon",
     "color": "Pink"
