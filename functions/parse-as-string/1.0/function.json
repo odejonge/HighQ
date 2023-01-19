@@ -22,7 +22,7 @@
         "type": "Boolean"
       },
       "name": "output",
-      "info": "The name of the variable you want for the fetched value."
+      "info": "The name of the variable you want for the parsed value."
     }
   ],
   "yields": "NONE"
