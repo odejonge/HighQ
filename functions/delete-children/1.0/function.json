@@ -1,0 +1,32 @@
+{
+  "description": "Deletes any nested child objects",
+  "label": "Delete Child objects",
+  "category": "Misc",
+  "icon": {
+    "name": "UserMinIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "label": "Object",
+      "name": "input",
+      "meta": {
+        "type": "Object",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "as",
+      "label": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
