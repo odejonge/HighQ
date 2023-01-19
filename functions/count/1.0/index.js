@@ -1,10 +1,12 @@
 const count = async ({ countable }) => {
   try {
+    JSON.parse(countable);
+  } catch (e) {
+    throw new Error(e);
+  } finally {
     return {
       as: countable.length,
     };
-  } catch (e) {
-    throw new Error(e);
   }
 };
 
