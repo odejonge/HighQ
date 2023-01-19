@@ -1,0 +1,41 @@
+{
+  "description": "Description",
+  "label": "String Builder",
+  "category": "Misc",
+  "icon": {
+    "name": "FieldsetIcon",
+    "color": "Green"
+  },
+  "options": [
+    {
+      "name": "baseText",
+      "label": "Base text",
+      "info": "Put text in here and encompass the parts that you want replaced like {{ this }}.",
+      "meta": {
+        "type": "MultilineText"
+      }
+    },
+    {
+      "name": "keyValue",
+      "info": "On the left hand, define the names of the key you want to replace. On the right hand, set the value it gets.",
+      "label": "Key Value",
+      "meta": {
+        "type": "Map",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

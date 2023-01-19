@@ -24,4 +24,10 @@ describe('Fetch variables from a JSON Object', () => {
     expect(output).not.toBeNull();
     expect(output).toEqual('myValue');
   });
+
+  test('Fetch invalid JSON variable', async () => {
+    const jsonInput = {};
+    const keyName = 'fake';
+    const { output } = await fetchJsonVariable({ jsonInput, keyName });
+  });
 });

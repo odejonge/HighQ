@@ -1,6 +1,6 @@
 import provisonFields from '../functions/provison-fields/1.0';
 const fields =
-  '["strategic","homepage","onlineserviceslink","disableeditprofile","status","activateautologin","link","logoid","name","createddate","companyswitchboard","logowidth","logoheight","id","internal","noofusers","guid","category","orgindustryid","restrictdirectlogin","excludesynchronization","url","orgid","externalid"]';
+  '["orgindustryid","restrictdirectlogin","excludesynchronization","url","orgid","externalid"]';
 describe('Provision fields', () => {
   test('Get fields from params and add them to the input object', async () => {
     const { as } = await provisonFields({
@@ -12,7 +12,17 @@ describe('Provision fields', () => {
       },
     });
     expect(as).not.toBeNull();
-    expect(as).toEqual({});
+    expect(as).toEqual({
+      property: 'here',
+      another: 'one',
+      there: 'nice',
+      externalid: null,
+      orgid: null,
+      url: null,
+      excludesynchronization: null,
+      restrictdirectlogin: null,
+      orgindustryid: null,
+    });
   });
 
   test('Get fields from params and add them to the input array', async () => {
@@ -32,7 +42,30 @@ describe('Provision fields', () => {
       ],
     });
     expect(as).not.toBeNull();
-    expect(as).toEqual([{}]);
+    expect(as).toEqual([
+      {
+        property: 'here',
+        another: 'one',
+        there: 'nice',
+        externalid: null,
+        orgid: null,
+        url: null,
+        excludesynchronization: null,
+        restrictdirectlogin: null,
+        orgindustryid: null,
+      },
+      {
+        property: 'here',
+        another: 'one',
+        there: 'nice',
+        externalid: null,
+        orgid: null,
+        url: null,
+        excludesynchronization: null,
+        restrictdirectlogin: null,
+        orgindustryid: null,
+      },
+    ]);
   });
 
   test('Not an array', async () => {
