@@ -1,0 +1,32 @@
+{
+  "description": "Parses any given input to an object.",
+  "label": "Parse As Object",
+  "category": "Parse",
+  "icon": {
+    "color": "Teal",
+    "name": "VariableIcon"
+  },
+  "options": [
+    {
+      "label": "Input",
+      "name": "input",
+      "info": "The value you want to convert to an object.",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["JSON", "OBJECT", "STRING", "ARRAY"]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "info": "The name of the variable you want for the parsed value.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
