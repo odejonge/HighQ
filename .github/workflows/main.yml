@@ -8,4 +8,7 @@ jobs:
         name: Install BB CLI
         run: |
             npm i -g @betty-blocks/cli
-            bb functions validate
+      -
+        name: Run validation
+        run: |
+            bb functions validate        
