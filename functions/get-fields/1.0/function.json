@@ -1,7 +1,7 @@
 {
   "description": "Gets the fields that are requested from the pagebuilder.",
   "label": "Get Fields",
-  "category": "Parameters",
+  "category": "Data API",
   "icon": {
     "color": "Teal",
     "name": "DataJumpUpIcon"

@@ -1,7 +1,7 @@
 {
   "description": "Gets the filters in the request, from params, and outputs them as a key value object",
   "label": "Get Filters",
-  "category": "Parameters",
+  "category": "Data API",
   "icon": {
     "color": "Teal",
     "name": "DataJumpUpIcon"
