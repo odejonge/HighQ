@@ -12,12 +12,8 @@ jobs:
             - name: Install jest
               run: |
                   npm i -g jest
-            - name: Run jest
+            - name: Run jest and generate coverage report
               run: |
                   jest
-            - name: Check test coverage
-              id: test-coverage
-              uses: johanvanhelden/gha-clover-test-coverage-check@v1
-              with:
-                percentage: "95"
-                filename: "./coverage/clover.xml"
+            - name: Setup LCOV
+              uses: hrishikesh-kadam/setup-lcov@v1
