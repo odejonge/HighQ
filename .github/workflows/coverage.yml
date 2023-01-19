@@ -9,9 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: dorny/test-reporter@v1
+            - uses: danhunsaker/clover-reporter-action@v0.2.17-clover
               with:
-                artifact: test-results            # artifact name
-                name: JEST Tests                  # Name of the check run which will be created
-                path: '*.xml'                     # Path to test results (inside artifact .zip)
-                reporter: jest-junit              # Format of test results
+                github-token: ${{ secrets.GITHUB_TOKEN }}
+                clover-file: ./coverage/clover.xml
