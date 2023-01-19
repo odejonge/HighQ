@@ -1,14 +1,21 @@
-name: 'coverage'
-on: [push]
+name: 'Test report'
+on: 
+  workflow_run:
+    workflows: ['Validate actions']
+    types:
+      - completed
 jobs:
     coverage:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: ArtiomTr/jest-coverage-report-action@v2
-              id: coverage
+            - uses: dorny/test-reporter@v1
               with:
-                  output: report-markdown
-            - uses: marocchino/sticky-pull-request-comment@v2
-              with:
-                  message: ${{ steps.coverage.outputs.report }}
+                artifact: test-results            # artifact name
+                name: JEST Tests                  # Name of the check run which will be created
+                path: '*.xml'                     # Path to test results (inside artifact .zip)
+                reporter: jest-junit              # Format of test results
+                list-suites: 'all'
+                list-tests: only-summary
+                max-annotations: 10
+                fail-on-error: 'true'
