@@ -1,5 +1,3 @@
-import templayed from './templayed';
-
 const parseHeaders = (headers) =>
   headers.reduce((acc, { key, value }) => ({ ...acc, [key]: value }), {});
 
@@ -14,16 +12,16 @@ const parseQueryParameters = (queryParameters) =>
 const generateUrl = (url, protocol, queryParameters) =>
   `${protocol}://${url}${parseQueryParameters(queryParameters)}`;
 
-const https2 = async ({
+const http3 = async ({
   url,
   method,
-  body,
   headers = [],
   protocol,
-  variables,
   queryParameters = [],
+  bodyParameters = [],
+  sendAsFormData,
 }) => {
-  const variableMap = variables.reduce((previousValue, currentValue) => {
+  let newBody = bodyParameters.reduce((previousValue, currentValue) => {
     previousValue[currentValue.key] = currentValue.value;
     return previousValue;
   }, {});
@@ -32,7 +30,8 @@ const https2 = async ({
   const options = {
     method,
     headers: parseHeaders(headers),
-    body: body ? templayed(body)(variableMap) : undefined,
+    body: method !== 'get' && !sendAsFormData ? { newBody } : undefined,
+    FormData: method !== 'get' && sendAsFormData ? bodyParameters : undefined,
   };
 
   const response = await fetch(fetchUrl, options);
@@ -41,4 +40,4 @@ const https2 = async ({
   return { as: data };
 };
 
-export default https2;
+export default http3;

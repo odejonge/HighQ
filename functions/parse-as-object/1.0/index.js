@@ -1,6 +1,6 @@
 const parseAsArray = async ({ input }) => {
   try {
-    JSON.parse(input);
+    input = JSON.parse(input);
   } finally {
     return {
       as: input,

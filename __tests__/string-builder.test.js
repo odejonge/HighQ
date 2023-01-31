@@ -1,5 +1,5 @@
 import stringBuilder from '../functions/string-builder/1.0';
-import templayed from '../functions/string-builder/1.0/templayed';
+
 describe('String Builder', () => {
   test('Two properties', async () => {
     const baseText = 'replace {{ me }} with {{ something }}';
@@ -16,5 +16,22 @@ describe('String Builder', () => {
     const { as } = await stringBuilder({ baseText, keyValue });
 
     expect(as).toEqual('replace you with nothing');
+  });
+
+  test('Null property', async () => {
+    const baseText = "{{ this }}shouldn't work{{ ending }}";
+    const keyValue = [
+      {
+        key: 'this',
+        value: null,
+      },
+      {
+        key: 'ending',
+        value: undefined,
+      },
+    ];
+    const { as } = await stringBuilder({ baseText, keyValue });
+
+    expect(as).toEqual("shouldn't work");
   });
 });
