@@ -49,7 +49,7 @@ describe('Native http', () => {
       headers: [
         { key: 'Content-Type', value: 'application/json; charset=UTF-8' },
       ],
-      protocol: 'http',
+      protocol: 'https',
       queryParameters: [{ key: 'name', value: 'foo' }],
       sendAsFormData: true,
     };
