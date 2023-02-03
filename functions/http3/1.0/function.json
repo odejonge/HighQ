@@ -1,10 +1,10 @@
 {
   "description": "Sends a HTTP(S) request",
-  "label": "HTTP(S) 3",
+  "label": "HTTP(S) 3.0",
   "category": "External",
   "icon": {
     "name": "CloudIcon",
-    "color": "Orange"
+    "color": "Teal"
   },
   "options": [
     {
