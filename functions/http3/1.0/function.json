@@ -95,12 +95,13 @@
       "info": "The name of the variable you want for the result of your request."
     },
     {
-      "name": "sendAsFormData",
-      "label": "Send as FormData",
+      "name": "useCustomEncode",
+      "label": "Custom encode",
       "meta": {
         "type": "Boolean"
       },
-      "info": "Parses the body as Form Data before sending it"
+      "info": "Parses the body to uriEncode() before sending it",
+      "advanced": true
     }
   ],
   "yields": "NONE"

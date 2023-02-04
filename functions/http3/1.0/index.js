@@ -13,10 +13,21 @@ const generateUrl = (url, protocol, queryParameters) =>
   `${protocol}://${url}${parseQueryParameters(queryParameters)}`;
 
 const parseBodyParameters = (bodyParameters) => {
-  bodyParameters.reduce((previousValue, currentValue) => {
+  return bodyParameters.reduce((previousValue, currentValue) => {
     previousValue[currentValue.key] = currentValue.value;
     return previousValue;
   }, {});
+};
+const customEncode = (obj) => {
+  return Object.entries(obj)
+    .map(([key, value]) => {
+      let encoded = value.replace(
+        /[^\w\.~-]/g,
+        (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase()
+      );
+      return key + '=' + encoded;
+    })
+    .join('&');
 };
 
 const http3 = async ({
@@ -26,44 +37,21 @@ const http3 = async ({
   protocol,
   queryParameters = [],
   bodyParameters = [],
-  sendAsFormData,
+  useCustomEncode,
 }) => {
-  let newBody = bodyParameters.reduce((previousValue, currentValue) => {
-    previousValue[currentValue.key] = currentValue.value;
-    return previousValue;
-  }, {});
-
-  console.log(newBody);
+  bodyParameters = parseBodyParameters(bodyParameters);
 
   const fetchUrl = generateUrl(url, protocol, queryParameters);
   const options = {
     method,
     headers: parseHeaders(headers),
     body:
-      method !== 'get' && !sendAsFormData
-        ? { ...parseBodyParameters(newBody) }
+      method !== 'get'
+        ? !useCustomEncode
+          ? { ...bodyParameters }
+          : customEncode(bodyParameters)
         : undefined,
-    formData: [
-      {
-        key: 'client_id',
-        value: '1237',
-      },
-      {
-        key: 'client_secret',
-        value: 'PRaKUYMxvGhYPk8yWDTc9z3TB9xd8SBh',
-      },
-      {
-        key: 'code',
-        value: 'nrO2Zky5UN',
-      },
-      {
-        key: 'grant_type',
-        value: 'authorization_code',
-      },
-    ],
   };
-
-  console.log(options);
 
   //method !== 'get' && sendAsFormData ? [...bodyParameters] : undefined,
 
