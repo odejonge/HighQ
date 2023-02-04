@@ -1,0 +1,44 @@
+{
+  "description": "Description",
+  "label": "Slice",
+  "category": "Misc",
+  "icon": {
+    "name": "LineSolidIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "label": "input",
+      "name": "input",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["ARRAY", "OBJECT", "JSON"]
+      }
+    },
+    {
+      "label": "start",
+      "name": "startNumber",
+      "meta": {
+        "type": "Number"
+      }
+    },
+    {
+      "label": "end",
+      "name": "endNumber",
+      "meta": {
+        "type": "Number"
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
