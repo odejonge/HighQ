@@ -19,7 +19,10 @@
     {
       "label": "AS",
       "meta": {
-        "type": "Number"
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
       },
       "name": "output",
       "info": "The name of the variable you want for the parsed value."

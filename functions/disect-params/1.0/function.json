@@ -58,6 +58,17 @@
       },
       "label": "Limit as",
       "info": "Returns the amount of records that need to be shown."
+    },
+    {
+      "name": "jwt",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      },
+      "label": "Auth Info",
+      "info": "Returns the JWT associated with the request."
     }
   ],
   "yields": "NONE"

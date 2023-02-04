@@ -1,0 +1,94 @@
+{
+  "description": "Returns a DateTime property calculated from the given offsets",
+  "label": "Calculate DateTime from Now",
+  "category": "Dates",
+  "icon": {
+    "color": "Teal",
+    "name": "DateTimeIcon"
+  },
+  "options": [
+    {
+      "name": "timeZone",
+      "meta": {
+        "type": "Select",
+        "validations": { "required": true },
+        "values": [
+          {
+            "label": "NL3",
+            "value": "Europe/Amsterdam"
+          },
+          {
+            "label": "US2",
+            "value": "US/Central"
+          }
+        ]
+      },
+      "label": "Select the zone of the application"
+    },
+    {
+      "name": "days",
+      "meta": {
+        "type": "Number",
+        "validations": {
+          "required": false
+        }
+      },
+      "configuration": {
+        "placeholder": "Days"
+      },
+      "label": "Days"
+    },
+    {
+      "name": "hours",
+      "meta": {
+        "type": "Number",
+        "validations": {
+          "required": false
+        }
+      },
+      "configuration": {
+        "placeholder": "Hours"
+      },
+      "label": "Hours"
+    },
+    {
+      "name": "minutes",
+      "meta": {
+        "type": "Number",
+        "validations": {
+          "required": false
+        }
+      },
+      "configuration": {
+        "placeholder": "Minutes"
+      },
+      "label": "Minutes"
+    },
+    {
+      "name": "seconds",
+      "meta": {
+        "type": "Number",
+        "validations": {
+          "required": false
+        }
+      },
+      "configuration": {
+        "placeholder": "Seconds"
+      },
+      "label": "Seconds"
+    },
+    {
+      "name": "dateTimeOutput",
+      "advanced": false,
+      "label": "The datetime output, in UTC",
+      "info": "Has to be 'dateTimeOutput'",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

@@ -8,12 +8,12 @@
   },
   "options": [
     {
-      "label": "Array",
+      "label": "Countable",
       "info": "Insert an array or collection.",
       "name": "countable",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["JSON", "ARRAY", "STRING"]
+        "allowedKinds": ["JSON", "ARRAY", "OBJECT"]
       }
     },
     {

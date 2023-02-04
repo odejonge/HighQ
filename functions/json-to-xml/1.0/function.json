@@ -1,0 +1,37 @@
+{
+  "description": "Converts a JSON Object to XML",
+  "label": "Json To Xml",
+  "category": "Misc",
+  "icon": {
+    "color": "Orange",
+    "name": "ArrowClockwiseIcon"
+  },
+  "options": [
+    {
+      "name": "input",
+      "label": "JSON Object",
+      "meta": {
+        "type": "JSON",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "root",
+      "label": "Root name",
+      "info": "Leave empty for no root.",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "name": "as",
+      "label": "as",
+      "meta": {
+        "type": "Text"
+      }
+    }
+  ],
+  "yields": "NONE"
+}

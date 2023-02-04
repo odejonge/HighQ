@@ -1,0 +1,33 @@
+{
+  "description": "Parses a JSON object to Text",
+  "label": "Parse Json As Text",
+  "category": "Parse",
+  "icon": {
+    "color": "Teal",
+    "name": "VariableIcon"
+  },
+  "options": [
+    {
+      "label": "input",
+      "name": "input",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["JSON", "OBJECT", "STRING"],
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

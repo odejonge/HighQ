@@ -12,7 +12,7 @@
       "label": "JSON Input",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["STRING", "JSON"],
+        "allowedKinds": ["STRING", "JSON", "OBJECT"],
         "validations": {
           "required": true
         }

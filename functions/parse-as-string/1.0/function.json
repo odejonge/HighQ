@@ -12,14 +12,17 @@
       "info": "The value you want to convert to a Text",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["NUMBER", "BOOLEAN"]
+        "allowedKinds": ["NUMBER", "BOOLEAN", "STRING"]
       },
       "name": "input"
     },
     {
       "label": "AS",
       "meta": {
-        "type": "Boolean"
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
       },
       "name": "output",
       "info": "The name of the variable you want for the parsed value."

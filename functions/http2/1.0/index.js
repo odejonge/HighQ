@@ -23,7 +23,6 @@ const https2 = async ({
   variables,
   queryParameters = [],
 }) => {
-  //   throw JSON.stringify(variables);
   const variableMap = variables.reduce((previousValue, currentValue) => {
     previousValue[currentValue.key] = currentValue.value;
     return previousValue;

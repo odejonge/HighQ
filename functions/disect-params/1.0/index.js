@@ -1,4 +1,6 @@
-const disectParams = async ({ params: { skip, take, select, conditions } }) => {
+const disectParams = async ({
+  params: { skip, take, select, conditions, auth_info },
+}) => {
   let filters = {};
   const setConditions = (conditions) => {
     if (Array.isArray(conditions)) {
@@ -21,8 +23,9 @@ const disectParams = async ({ params: { skip, take, select, conditions } }) => {
   return {
     offset: skip,
     limit: take,
-    fields: JSON.stringify(select),
+    fields: JSON.stringify(select), //stringify because array
     filters,
+    jwt: auth_info.raw_jwt,
   };
 };
 
