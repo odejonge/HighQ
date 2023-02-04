@@ -1,0 +1,64 @@
+{
+  "description": "Description",
+  "label": "Calculator",
+  "category": "Misc",
+  "icon": {
+    "name": "Grid9Tiles",
+    "color": "Teal"
+  },
+  "options": [
+    {
+      "name": "method",
+      "label": "method",
+      "meta": {
+        "validations": {
+          "required": true
+        },
+        "type": "Select",
+        "values": [
+          {
+            "label": "Add",
+            "value": "add"
+          },
+          {
+            "label": "Subtract",
+            "value": "subtract"
+          },
+          {
+            "label": "Multiply",
+            "value": "multiply"
+          },
+          {
+            "label": "Divide",
+            "value": "divide"
+          }
+        ]
+      }
+    },
+    {
+      "name": "firstNumber",
+      "label": "First number",
+      "meta": {
+        "type": "Number"
+      }
+    },
+    {
+      "name": "secondNumber",
+      "label": "Second number",
+      "meta": {
+        "type": "Number"
+      }
+    },
+    {
+      "name": "as",
+      "label": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
