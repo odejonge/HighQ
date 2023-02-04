@@ -51,7 +51,7 @@ describe('Native http', () => {
       ],
       protocol: 'https',
       queryParameters: [{ key: 'name', value: 'foo' }],
-      sendAsFormData: true,
+      useCustomEncode: true,
     };
 
     const { as } = await http3(request);
