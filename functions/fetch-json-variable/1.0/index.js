@@ -12,16 +12,16 @@ const fetchJsonVariable = async ({ jsonInput, keyName }) => {
       jsonInput = jsonInput[value];
     });
   }
+
   if (Object.hasOwn(jsonInput, keyName)) {
     return {
-      output: keyName in jsonInput ? jsonInput[keyName] : '',
+      output: jsonInput[keyName],
     };
   } else {
-    throw new Error(
-      `The key "${keyName}" was not found in object ${JSON.stringify(
-        jsonInput
-      )}`
-    );
+    console.log('empty output triggered');
+    return {
+      output: '',
+    };
   }
 };
 
