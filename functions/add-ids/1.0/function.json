@@ -22,7 +22,8 @@
       "name": "array",
       "label": "records",
       "meta": {
-        "type": "JSON"
+        "type": "Value",
+        "allowedKinds": ["ARRAY", "JSON", "OBJECT"]
       },
       "info": "The array of records"
     },
@@ -32,7 +33,7 @@
       "meta": {
         "type": "Output",
         "output": {
-          "type": "JSON"
+          "type": "Object"
         }
       }
     }
