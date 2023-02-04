@@ -1,0 +1,29 @@
+{
+  "description": "Parses a given input like javascripts uriEncodeComponent() function",
+  "label": "Parse as URI Encoded",
+  "category": "Parse",
+  "icon": {
+    "name": "RegExIcon",
+    "color": "Teal"
+  },
+  "options": [
+    {
+      "name": "input",
+      "label": "input",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
