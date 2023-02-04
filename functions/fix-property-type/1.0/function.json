@@ -1,0 +1,57 @@
+{
+  "description": "Description",
+  "label": "Fix Property Type",
+  "category": "Misc",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "label": "input",
+      "name": "input",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["OBJECT", "ARRAY", "JSON"]
+      }
+    },
+    {
+      "label": "Key name",
+      "name": "keyName",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "label": "set to",
+      "name": "setTo",
+      "meta": {
+        "validations": {
+          "required": true
+        },
+        "type": "Select",
+        "values": [
+          {
+            "label": "Text",
+            "value": "text"
+          },
+          {
+            "label": "Number",
+            "value": "number"
+          }
+        ]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
