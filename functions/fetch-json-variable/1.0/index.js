@@ -18,7 +18,6 @@ const fetchJsonVariable = async ({ jsonInput, keyName }) => {
       output: jsonInput[keyName],
     };
   } else {
-    console.log('empty output triggered');
     return {
       output: '',
     };
