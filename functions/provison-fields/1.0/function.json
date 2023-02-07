@@ -16,9 +16,10 @@
     },
     {
       "name": "input",
-      "label": "Object(s)",
+      "label": "Items",
       "meta": {
-        "type": "Object"
+        "type": "Value",
+        "allowedKinds": ["OBJECT", "JSON", "ARRAY"]
       }
     },
     {
@@ -27,7 +28,7 @@
       "meta": {
         "type": "Output",
         "output": {
-          "type": "Object"
+          "type": "JSON"
         }
       }
     }

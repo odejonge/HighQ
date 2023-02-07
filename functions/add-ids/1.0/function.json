@@ -33,7 +33,7 @@
       "meta": {
         "type": "Output",
         "output": {
-          "type": "Object"
+          "type": "JSON"
         }
       }
     }
