@@ -1,0 +1,42 @@
+{
+  "description": "Description",
+  "label": "Pop",
+  "category": "Array",
+  "icon": {
+    "name": "DataJumpUpIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "name": "array",
+      "label": "arrayInput",
+      "meta": {
+        "type": "Object",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "label": "element",
+      "name": "object",
+      "meta": {
+        "type": "Object",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Boolean"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
