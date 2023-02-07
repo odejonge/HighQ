@@ -1,4 +1,4 @@
-const parseAsArray = async ({ input }) => {
+const parseAsObject = async ({ input }) => {
   try {
     input = JSON.parse(input);
   } finally {
@@ -8,4 +8,4 @@ const parseAsArray = async ({ input }) => {
   }
 };
 
-export default parseAsArray;
+export default parseAsObject;
