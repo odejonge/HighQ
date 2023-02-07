@@ -1,0 +1,42 @@
+{
+  "description": "Description",
+  "label": "Push",
+  "category": "Array",
+  "icon": {
+    "name": "DownloadIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "name": "array",
+      "label": "arrayInput",
+      "meta": {
+        "type": "Object",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "label": "object",
+      "name": "element",
+      "meta": {
+        "type": "Object",
+        "validations": {
+          "required": true
+        }
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
