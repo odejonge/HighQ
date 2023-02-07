@@ -1,0 +1,32 @@
+{
+  "description": "Parses any given input to JSON.",
+  "label": "Parse As JSON",
+  "category": "Parse",
+  "icon": {
+    "color": "Teal",
+    "name": "BracketsCurly"
+  },
+  "options": [
+    {
+      "label": "Input",
+      "name": "input",
+      "info": "The value you want to convert to JSON.",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["OBJECT", "STRING", "ARRAY"]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "info": "The name of the variable you want for the parsed value.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
