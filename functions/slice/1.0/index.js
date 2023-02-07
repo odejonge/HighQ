@@ -1,6 +1,6 @@
-const slice = async ({ input, startNumber, endNumber }) => {
+const slice = async ({ inputArray, startNumber, endNumber }) => {
   return {
-    as: input.slice(startNumber, endNumber),
+    as: inputArray.slice(startNumber, endNumber),
   };
 };
 

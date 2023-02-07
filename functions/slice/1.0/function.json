@@ -1,7 +1,7 @@
 {
   "description": "Description",
   "label": "Slice",
-  "category": "Misc",
+  "category": "Array",
   "icon": {
     "name": "LineSolidIcon",
     "color": "Pink"
@@ -9,7 +9,7 @@
   "options": [
     {
       "label": "input",
-      "name": "input",
+      "name": "inputArray",
       "meta": {
         "type": "Value",
         "allowedKinds": ["ARRAY", "OBJECT", "JSON"]
