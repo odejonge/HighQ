@@ -21,7 +21,18 @@
       "label": "object",
       "name": "element",
       "meta": {
-        "type": "Object",
+        "type": "Value",
+        "allowedKinds": [
+          "OBJECT",
+          "JSON",
+          "BOOLEAN",
+          "NUMBER",
+          "STRING",
+          "ARRAY",
+          "FILE",
+          "IMAGE",
+          "RECORD"
+        ],
         "validations": {
           "required": true
         }
