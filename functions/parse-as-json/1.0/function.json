@@ -13,7 +13,7 @@
       "info": "The value you want to convert to JSON.",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["OBJECT", "STRING", "ARRAY"]
+        "allowedKinds": ["OBJECT", "STRING", "ARRAY", "JSON"]
       }
     },
     {
