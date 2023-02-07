@@ -1,0 +1,37 @@
+{
+  "description": "(Re)assign a JSON variable",
+  "label": "(Re)assign JSON Variable",
+  "category": "Text",
+  "icon": {
+    "color": "Orange",
+    "name": "BracketsCurly"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["ARRAY", "JSON", "OBJECT", "STRING"],
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "value",
+      "label": "Object value",
+      "info": "The value you want to assign"
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON",
+          "validations": {
+            "required": true
+          }
+        }
+      },
+      "name": "result",
+      "label": "Variable"
+    }
+  ],
+  "yields": "NONE"
+}
