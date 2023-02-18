@@ -1,0 +1,38 @@
+{
+  "description": "Description",
+  "label": "Luke Expression",
+  "category": "Misc",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "name": "input",
+      "label": "input",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["OBJECT", "JSON"]
+      }
+    },
+    {
+      "info": "oi m8 u did this in power autom8",
+      "label": "expression",
+      "name": "expression",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
