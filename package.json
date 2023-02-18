@@ -9,7 +9,8 @@
     "lodash": "^4.17.15",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.40",
-    "xml-js": "^1.6.11"
+    "xml-js": "^1.6.11",
+    "xmlbuilder": "^15.1.1"
   },
   "private": "true"
 }
