@@ -1,19 +1,7 @@
-// import convert from 'xml-js';
-import { XMLBuilder } from 'fast-xml-parser';
-
-const jsonToXml = async ({ input, root }) => {
-  let finalObj = {};
-  if (input == null) input = {};
-  else finalObj = input;
-
-  console.log('rootname is: ', root);
-
-  if (root !== '') finalObj[root] = input;
-
-  console.log(finalObj);
-
+import * as builder from 'xmlbuilder';
+const jsonToXml = async ({ feedObj }) => {
   return {
-    as: new XMLBuilder({}).build(finalObj),
+    as: builder.create(feedObj, { encoding: 'utf-8' }).end({ pretty: false }),
   };
 };
 
