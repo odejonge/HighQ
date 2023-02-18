@@ -11,7 +11,8 @@
       "name": "array",
       "label": "arrayInput",
       "meta": {
-        "type": "Object",
+        "type": "Value",
+        "allowedKinds": ["ARRAY", "OBJECT", "JSON"],
         "validations": {
           "required": true
         }
