@@ -1,6 +1,6 @@
 {
   "description": "Sends a HTTP(S) request",
-  "label": "HTTP(S) 3.0",
+  "label": "HTTP(S) 3.0 (JSON)",
   "category": "External",
   "icon": {
     "name": "CloudIcon",
@@ -76,12 +76,12 @@
       "name": "queryParameters"
     },
     {
-      "info": "Body parameters can be defined as the optional key-value pairs that appear after the question mark in the URL.",
-      "label": "Body Parameters",
+      "info": "The body that should be sent along.",
+      "label": "Body",
       "meta": {
-        "type": "Map"
+        "type": "Text"
       },
-      "name": "bodyParameters"
+      "name": "body"
     },
     {
       "meta": {
@@ -93,15 +93,6 @@
       "name": "as",
       "label": "As",
       "info": "The name of the variable you want for the result of your request."
-    },
-    {
-      "name": "useCustomEncode",
-      "label": "Custom encode",
-      "meta": {
-        "type": "Boolean"
-      },
-      "info": "Parses the body to uriEncode() before sending it",
-      "advanced": true
     }
   ],
   "yields": "NONE"

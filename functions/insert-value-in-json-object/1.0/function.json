@@ -1,0 +1,53 @@
+{
+  "description": "Description",
+  "label": "Instert Value In Json Object",
+  "category": "JSON",
+  "icon": {
+    "name": "FieldsetIcon",
+    "color": "Teal"
+  },
+  "options": [
+    {
+      "name": "object",
+      "label": "object",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["JSON", "OBJECT"]
+      }
+    },
+    {
+      "name": "key",
+      "label": "key",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "name": "value",
+      "label": "value",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": [
+          "JSON",
+          "OBJECT",
+          "NUMBER",
+          "STRING",
+          "FILE",
+          "IMAGE",
+          "BOOLEAN"
+        ]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

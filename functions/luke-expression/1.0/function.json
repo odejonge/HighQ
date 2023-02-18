@@ -1,18 +1,26 @@
 {
   "description": "Description",
-  "label": "Xml Builder",
-  "category": "XML",
+  "label": "Luke Expression",
+  "category": "Misc",
   "icon": {
-    "name": "CodeIcon",
-    "color": "Green"
+    "name": "ActionsIcon",
+    "color": "Orange"
   },
   "options": [
     {
+      "name": "input",
       "label": "input",
-      "name": "feedObj",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["JSON", "OBJECT"]
+        "allowedKinds": ["OBJECT", "JSON"]
+      }
+    },
+    {
+      "info": "oi m8 u did this in power autom8",
+      "label": "expression",
+      "name": "expression",
+      "meta": {
+        "type": "Text"
       }
     },
     {
